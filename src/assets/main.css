@@ -1,0 +1,86 @@
+@import './base.css';
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 64px;
+  font-size: 1rem;
+}
+
+#main-container {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  width: 600px;
+  margin: 100px auto;
+  padding: 16px 24px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.todo-body.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.todo-body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  padding: 4px 16px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  background-color: red;
+  font-size: 1rem;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#add-container {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+#add-container form {
+  display: flex;
+}
+#add-container input {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  padding: 4px 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+#add-container input[type='submit'] {
+  cursor: pointer;
+  padding: 4px 16px;
+  width: fit-content;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  color: white;
+  background-color: dodgerblue;
+}
